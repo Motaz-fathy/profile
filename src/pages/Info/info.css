@@ -64,6 +64,10 @@ a{
    border: none;
 }
   @media only screen and (max-width: 900px) {
+    .contentCenter ,.contenttext {
+        height: 40%;
+        width: 100%;
+    }
     .contenttext h2 {
         color: #c9c9c9;
         font-size: 1.5em;
