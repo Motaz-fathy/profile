@@ -29,16 +29,14 @@ nav .navbg .icon {
 @media only screen and (max-width: 900px) {
 
     nav {
-        z-index: 2;
-        position: absolute;
-        top: 2px;
-        left: 0;
-        width: 70%;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    width: 100%;  
     height: 60px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: auto;
     }
     nav .navbg {
         width: 70%;
