@@ -58,6 +58,7 @@ export const Info = () => {
                 <Button variant="outlined" id='down'>download cv</Button>
             </h2>
           </Grid>
+          <Grid xs={12}></Grid>
         </Grid>
       </Container>
     </motion.div>
