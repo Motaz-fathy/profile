@@ -16,6 +16,7 @@ const location = useLocation()
     <AnimatePresence>
     <Routes location={location} key={location.pathname}>
       <Route exact path="/" element={<Info />} />
+      <Route exact path="/profile" element={<Info />} />
       <Route exact path="/contact" element={<Contact />} />
       <Route exact path="/projects" element={<Projects />} />
       <Route exact path="/skills" element={<Skills />} />
