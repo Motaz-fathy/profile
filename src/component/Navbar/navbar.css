@@ -35,4 +35,16 @@ nav .navbg .icon {
         align-items: center;
         margin: auto;
     }
+    nav {
+        margin: 0;
+        padding: 0;
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
