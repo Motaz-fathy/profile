@@ -1,7 +1,7 @@
 import styled from "@/styles/skills.module.css";
 import { useInView } from "react-intersection-observer";
 
-export const Skills = ({ skills }) => {
+const Skills = ({ skills }) => {
   const { ref: Pro1, inView: Pro1Visable } = useInView();
   const { ref: Pro2, inView: Pro2Visable } = useInView();
   const { ref: Pro3, inView: Pro3Visable } = useInView();
@@ -123,3 +123,5 @@ export const Skills = ({ skills }) => {
     </div>
   );
 };
+
+export default Skills
