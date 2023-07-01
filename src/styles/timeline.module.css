@@ -1,0 +1,115 @@
+@font-face {
+    font-family: timline;
+    src: url('../../public/MPLUS1p-Bold.ttf');
+  }
+.title {
+    margin-bottom: 8% ;
+    text-align: center;
+    font-family: timline;
+    color: #221807;
+    font-weight: bolder ;
+}
+
+.timeline {
+    margin:  5em auto;
+    max-width: 34.15em;
+}
+
+.checkpoint {
+    max-width: 34em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    position: relative;
+}
+.checkpoint .point {
+    border: 2px dashed #221807;
+    border-radius: 1em;
+    padding: 1.5em;
+}
+.checkpoint .detalise {
+    line-height: 27px;
+    color: black;
+}
+.checkpoint:nth-child(odd) {
+    border-left: 3px dashed #221807;
+    padding-left: 3em;
+    transform: translateX(17em);
+
+}
+.checkpoint:nth-child(even) {
+    border-right: 3px dashed #221807;
+    padding-right: 3em ;
+    transform: translateX(-17em);
+    
+}
+.TimeLineAnmation {
+    animation-duration: 4s;
+    animation-name: timeAnime;
+}
+@keyframes timeAnime {
+    0%{opacity: 0; }
+    100%{opacity: 1; }
+}
+.checkpoint:nth-child(odd)::before , 
+.checkpoint:nth-child(even)::before {
+    content: '';
+    background-color: #221807;
+    width: 3em;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.checkpoint:nth-child(odd)::before {
+    left: 0;
+}
+.checkpoint:nth-child(even)::before {
+    right: 0;
+}
+
+.checkpoint:nth-child(odd) .point::before , 
+.checkpoint:nth-child(even) .point::before  {
+    content: '';
+    background-color: #221807;
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.checkpoint:nth-child(odd) .point::before {
+ left: -0.5em;
+}
+.checkpoint:nth-child(even) .point::before {
+    right: -0.5em;
+}
+
+/* start media query  */ 
+
+@media screen and ( max-width : 1150px){
+    
+    .timeline {
+        width: 80vw;
+    }
+    .timeline .checkpoint {
+        width: 100%;
+        transform: none;
+        padding-left: 0 ;
+        padding-right: 0;
+        border: none;
+    }
+    .timeline .checkpoint::before {
+        width: 3px;
+        height: 4em;
+        top: -2em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .timeline .checkpoint .point::before {
+        top: -0.5em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
