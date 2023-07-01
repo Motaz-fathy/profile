@@ -1,4 +1,5 @@
 {
+  "homepage": "https://Motaz-fathy/github.io/profile",
   "name": "portfilio",
   "version": "0.1.0",
   "private": true,
@@ -6,7 +7,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build"
   },
   "dependencies": {
     "eslint": "8.42.0",
@@ -17,8 +20,5 @@
     "react-icons": "^4.9.0",
     "react-intersection-observer": "^9.5.0",
     "simple-icons": "^9.1.0"
-  },
-  "devDependencies": {
-    "gh-pages": "^5.0.0"
   }
 }
