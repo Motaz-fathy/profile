@@ -3,7 +3,7 @@ import Styled from '../styles/navbar.module.css'
 import Experience from '../pages/experience'
 import Contact from '../pages/contact'
 import  About  from './About'
-import { Skills } from '@/pages/Skills'
+import  Skills  from '@/pages/Skills'
 
 import {VscThreeBars}  from 'react-icons/vsc'
 import {AiOutlineCloseSquare} from 'react-icons/ai'
